@@ -1,0 +1,27 @@
+<section>
+    <br>
+    <h2 class="text-center"><b>THÔNG TIN CÔNG TY</b></h2>
+    <br>
+    <div class="wrapper">
+        <div class="item" *ngFor="let a of articles,let i of index">
+            <h3><b>{{a.title}}</b></h3>
+            <img [src]="a.path" alt="picture">
+            <p class="content">{{a.content}}
+            </p>
+        </div>
+        <!-- <div class="item item2">
+            <h3><b>Hỗ trợ</b></h3>
+            <img src="../../../assets/img/posts/4.jpg" alt="picture">
+            <p class="content">Công ty Cổ phần Công nghệ T- Solution là công ty hoạt động trong lĩnh vực IT có văn phòng làm việc tại Hà Nội. Công ty có môi trường làm việc chuyên nghiệp, mang tính quốc tế cao, luôn tạo điều kiện cho các cá nhân có cơ hội phát triển nghề
+                nghiệp.
+            </p>
+        </div>
+        <div class="item item3">
+            <h3><b>Hỗ trợ</b></h3>
+            <img src="../../../assets/img/posts/5.jpg" alt="picture">
+            <p class="content">Công ty Cổ phần Công nghệ T- Solution là công ty hoạt động trong lĩnh vực IT có văn phòng làm việc tại Hà Nội. Công ty có môi trường làm việc chuyên nghiệp, mang tính quốc tế cao, luôn tạo điều kiện cho các cá nhân có cơ hội phát triển nghề
+                nghiệp.
+            </p>
+        </div> -->
+    </div>
+</section>

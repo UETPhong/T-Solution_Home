@@ -1,0 +1,122 @@
+<section>
+    <div class="wrapper">
+        <div class="item item1">
+            <img src="../../../assets/img/placeholder.jpg" alt="">
+        </div>
+        <div class="item item2">
+            <h2><b>{{Selected.title}}</b></h2>
+            <p>Công ty TNHH Sản xuất & Dịch vụ T-Solution</p>
+            <p>Hà Nội</p>
+            <div class="row">
+                <div class="col">Mức lương: 5 - 7 triệu</div>
+                <div class="col">Hạn nộp: 03-03-2020</div>
+            </div>
+        </div>
+        <div class="item item3 d-flex align-items-center">
+            <!-- <button type="button" class="btn btn-outline-primary" data-toggle="modal" (click)="[getById(r.id),primaryModal.show()]">Ứng tuyển</button> -->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" (click)="primaryModal.show()">Ứng tuyển</button>
+        </div>
+    </div>
+    <div class="item allitem">
+        <h3>Thông tin chi tiết</h3>
+        <div class="detail">
+            <div class="detail1">
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                    <ngb-panel title="MÔ TẢ CÔNG VIỆC">
+                        <ng-template ngbPanelContent>
+                            <p>{{Selected.description}}</p>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel>
+                        <ng-template ngbPanelTitle>
+                            <span>YÊU CẦU CÔNG VIỆC</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel title="QUYỀN LỢI">
+                        <ng-template ngbPanelContent>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </div>
+            <div class="detail2">
+                <form style="border: 2px solid rgb(189, 166, 166); padding: 1rem;">
+                    <div style="border-bottom:1px solid brown;">
+                        <h4>YÊU CẦU KINH NGHIỆM</h4>
+                        <p>Chưa có kinh nghiệm</p>
+                    </div>
+                    <div style="border-bottom:1px solid brown;">
+                        <h4>TRÌNH ĐỘ HỌC VẤN</h4>
+                        <p>Cao đẳng</p>
+                    </div>
+                    <div style="border-bottom:1px solid brown;">
+                        <h4>CẤP BẬC NGHỀ NGHIỆP</h4>
+                        <p>Chuyên viên có kinh nghiệm</p>
+                    </div>
+                    <div style="border-bottom:1px solid brown;">
+                        <h4>HÌNH THỨC LÀM VIỆC</h4>
+                        <p>Nhân sự chính thức</p>
+                    </div>
+                    <div>
+                        <h4>LIÊN HỆ</h4>
+                        <p>Công Ngọc Ánh 0848481094 cnanh@cmc.com.vn Tầng 12, Tòa nhà CMC, Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+    <div bsModal #primaryModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-primary" role="document" style="padding-top:1rem ;margin: 0 auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="margin-top: 0">Thông tin ứng tuyển</h4>
+                    <button type="button" class="close" (click)="primaryModal.hide()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body" style="padding: 1rem;">
+                    <form *ngIf="Selected">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Họ và tên</label>
+                            <input type="text" class="form-control" placeholder="Họ và tên" (input)="addValue.full_name = $event.target.value">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" placeholder="Email@Example" (input)="addValue.email = $event.target.value">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Số điện thoại</label>
+                            <input type="text" class="form-control" placeholder="Số điện thoại" (input)="addValue.number = $event.target.value">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Vị trí ứng tuyển</label>
+                            <input type="text" class="form-control" [value]="Selected.title" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Chọn CV của bạn</label>
+                            <input type="file" class="form-control-file" (change)="handleFile($event)">
+                            <p><i>**File .doc; .docx; .pdf không quá 2MB**</i></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="padding: 1rem;">
+                    <button type="button" class="btn btn-secondary" (click)="primaryModal.hide()">Đóng</button>
+                    <button type="button" class="btn btn-primary" (click)="addNew()">Ứng tuyển</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</section>
