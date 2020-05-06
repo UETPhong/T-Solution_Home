@@ -5,12 +5,14 @@ import { BannersService } from 'app/service';
 @Component({
     selector: 'app-components',
     templateUrl: './components.component.html',
+    styleUrls: ['./components.component.css'],
     styles: [`
     ngb-progressbar {
         margin-top: 5rem;
     }
-    `]
-})
+    `],
+   
+  })
 
 export class ComponentsComponent implements OnInit {
 

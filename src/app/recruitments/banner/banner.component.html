@@ -23,7 +23,7 @@
         </div>
         <div class="item item5">
             <ul class="list-recname">
-                <li *ngFor="let r of all">{{r.title}}</li>
+                <li *ngFor="let r of all"><a href="javascript:void(0)" [routerLink]="['/recruitment-details',r.id]">{{r.title}}</a></li>
             </ul>
         </div>
     </div>

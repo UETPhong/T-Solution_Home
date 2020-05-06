@@ -14,6 +14,8 @@ import { ExamplesModule } from './examples/examples.module';
 import { RecruitmentsModule } from './recruitments/recruitments.module';
 import { ContactsModule } from './contacts/contacts.module';
 import { RecruitmentDetailsModule } from './recruitment-details/recruitment-details.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { RecruitmentDetailsModule } from './recruitment-details/recruitment-deta
     AppRoutingModule,
     RecruitmentsModule,
     ContactsModule,
-    RecruitmentDetailsModule
+    RecruitmentDetailsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,13 @@
 section {
-    padding: 3rem 5rem;
+    padding: 1rem 5rem;
     /* background-color: #f9f9f9 */
-    background-color: #e4dede
+    background-color: #e4dede;
+    font: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+h3 a {
+    font-size: 26px;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -11,6 +17,16 @@ section {
     background-color: #fff;
     padding: 1rem;
     border-radius: 5px;
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.item ul li a {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .item1 {
@@ -39,7 +55,9 @@ section {
 
 .list-recname {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.7rem;
+    grid-row-gap: 0.2rem;
 }
 
 .list-recdetail {

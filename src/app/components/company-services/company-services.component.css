@@ -37,3 +37,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical
 }
+
+section {
+    font: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+}

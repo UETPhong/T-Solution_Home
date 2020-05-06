@@ -5,11 +5,16 @@
         </div>
         <div class="item item2">
             <h2><b>{{Selected.title}}</b></h2>
+            <br>
             <p>Công ty TNHH Sản xuất & Dịch vụ T-Solution</p>
             <p>Hà Nội</p>
             <div class="row">
-                <div class="col">Mức lương: 5 - 7 triệu</div>
-                <div class="col">Hạn nộp: 03-03-2020</div>
+                <div class="col little-title">Mức lương:
+                    <p>500 - 7000 $</p>
+                </div>
+                <div class="col little-title">Hạn nộp:
+                    <p> 03-03-2020 </p>
+                </div>
             </div>
         </div>
         <div class="item item3 d-flex align-items-center">
@@ -18,55 +23,61 @@
         </div>
     </div>
     <div class="item allitem">
-        <h3>Thông tin chi tiết</h3>
         <div class="detail">
+            <h3>Thông tin chi tiết</h3>
             <div class="detail1">
                 <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-                    <ngb-panel title="MÔ TẢ CÔNG VIỆC">
-                        <ng-template ngbPanelContent>
+                    <ngb-panel>
+                        <ng-template ngbPanelTitle>
+                            <span class="left-title-head">MÔ TẢ CÔNG VIỆC</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent class="left-title-body">
                             <p>{{Selected.description}}</p>
                         </ng-template>
                     </ngb-panel>
                     <ngb-panel>
                         <ng-template ngbPanelTitle>
-                            <span>YÊU CẦU CÔNG VIỆC</span>
+                            <span class="left-title-head">YÊU CẦU CÔNG VIỆC</span>
                         </ng-template>
-                        <ng-template ngbPanelContent>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <ng-template ngbPanelContent class="left-title-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. <br> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. <br> Food truck quinoa nesciunt laborum eiusmod. <br>                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. <br> Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. <br>                                Ad vegan excepteur butcher vice lomo. <br> Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
                         </ng-template>
                     </ngb-panel>
-                    <ngb-panel title="QUYỀN LỢI">
-                        <ng-template ngbPanelContent>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <ngb-panel>
+                        <ng-template ngbPanelTitle>
+                            <span class="left-title-head">QUYỀN LỢI</span>
+                        </ng-template>
+                        <ng-template ngbPanelContent class="left-title-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
                         </ng-template>
                     </ngb-panel>
                 </ngb-accordion>
             </div>
             <div class="detail2">
-                <form style="border: 2px solid rgb(189, 166, 166); padding: 1rem;">
-                    <div style="border-bottom:1px solid brown;">
+                <form class="form-detail-right">
+                    <div class="item-detail">
                         <h4>YÊU CẦU KINH NGHIỆM</h4>
                         <p>Chưa có kinh nghiệm</p>
                     </div>
-                    <div style="border-bottom:1px solid brown;">
+                    <div class="item-detail">
                         <h4>TRÌNH ĐỘ HỌC VẤN</h4>
                         <p>Cao đẳng</p>
                     </div>
-                    <div style="border-bottom:1px solid brown;">
+                    <div class="item-detail">
                         <h4>CẤP BẬC NGHỀ NGHIỆP</h4>
                         <p>Chuyên viên có kinh nghiệm</p>
                     </div>
-                    <div style="border-bottom:1px solid brown;">
+                    <div class="item-detail">
                         <h4>HÌNH THỨC LÀM VIỆC</h4>
                         <p>Nhân sự chính thức</p>
                     </div>
-                    <div>
+                    <div class="item-detail" style="border-bottom: none;">
                         <h4>LIÊN HỆ</h4>
-                        <p>Công Ngọc Ánh 0848481094 cnanh@cmc.com.vn Tầng 12, Tòa nhà CMC, Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
+                        <p>Công Ngọc Ánh <br> 0848481094 <br> cnanh@cmc.com.vn <br> Tầng 12, Tòa nhà CMC, Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
                     </div>
                 </form>
             </div>
