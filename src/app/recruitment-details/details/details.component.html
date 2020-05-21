@@ -32,7 +32,8 @@
                             <span class="left-title-head">MÔ TẢ CÔNG VIỆC</span>
                         </ng-template>
                         <ng-template ngbPanelContent class="left-title-body">
-                            <p>{{Selected.description}}</p>
+                            <div [innerHTML]="Selected.description"></div>
+                            <!-- {{Selected.description}} -->
                         </ng-template>
                     </ngb-panel>
                     <ngb-panel>

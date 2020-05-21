@@ -4,10 +4,15 @@
     <br>
     <div class="wrapper">
         <div class="item" *ngFor="let a of articles,let i of index">
-            <h3><b>{{a.title}}</b></h3>
-            <img [src]="a.path" alt="picture">
-            <p class="content">{{a.content}}
-            </p>
+            <a href="javascript:void(0)" [routerLink]="['/articlec',a.id]" style="color: black;">
+                <h3><b>{{a.title}}</b></h3>
+            </a>
+            <a href="javascript:void(0)" [routerLink]="['/articlec',a.id]">
+                <img [src]="a.path" alt="picture">
+            </a>
+            <a href="javascript:void(0)" [routerLink]="['/articlec',a.id]" style="color: black;">
+                <p class="content">{{a.content}}</p>
+            </a>
         </div>
     </div>
 </section>

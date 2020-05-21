@@ -15,6 +15,8 @@ import { RecruitmentsModule } from './recruitments/recruitments.module';
 import { ContactsModule } from './contacts/contacts.module';
 import { RecruitmentDetailsModule } from './recruitment-details/recruitment-details.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RtAdminComponent } from './rt-admin/rt-admin.component';
+import { ArticlecModule } from './articlec/articlec.module';
 
 
 
@@ -22,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    RtAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RecruitmentsModule,
     ContactsModule,
     RecruitmentDetailsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ArticlecModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NouisliderModule } from 'ng2-nouislider';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     NgbModule,
     NouisliderModule,
     ModalModule.forRoot(),
+    CKEditorModule
 
   ]
 })
