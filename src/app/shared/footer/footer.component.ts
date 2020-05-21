@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHouseUser, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHouseUser, faPhone, faEnvelope, faMapMarked } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { faHouseUser, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-ic
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-    faHouseUser = faHouseUser;
+    faHouseUser = faMapMarked;
     faPhone = faPhone;
     faEnvelope = faEnvelope;
     test : Date = new Date();
