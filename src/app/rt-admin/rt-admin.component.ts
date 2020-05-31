@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class RtAdminComponent implements OnInit {
 
   constructor() {  
-    // window.location.href = 'http://14.231.191.91:44351/frontend/#/dashboard';
-    window.location.href = 'http://localhost:4200/';
+    window.location.href = 'http://14.231.191.91:44351/frontend/#/dashboard';
+    // window.location.href = 'http://localhost:4200/';
   }
 
   ngOnInit(): void {

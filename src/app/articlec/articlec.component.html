@@ -1,36 +1,25 @@
 <section>
-    <div class="header-content">
-        <h2>Tiêu đề bài viết</h2>
-    </div>
-    <div class="main-content">
+    <div class="main-content" *ngIf="articlesSelected">
         <div class="content-left">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
-
+            <div class="header-content">
+                <h3>{{articlesSelected.title}}</h3>
+            </div>
+            <div [innerHTML]="articlesSelected.description"></div>
         </div>
+
+
         <div class="content-right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mi nec elit pretium porta. Ut pellentesque mollis magna et molestie. In elementum nulla vel augue tempor non ultrices mauris semper. Vestibulum nulla augue, volutpat
-                at bibendum id, interdum ut ante.
-            </p>
+            <div class="header-content">
+                <h3>Tin nổi bật</h3>
+            </div>
+            <ul>
+                <li *ngFor="let a of articles">
+                    <a routerLink="/articlec/{{a.id}}" (click)="getArticlesById(a.id)" tyle="color: black;">
+                        <img src="{{a.path}}" style="width: 100%;" alt="img">
+                        <div class="description" [innerHTML]="a.description"></div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
